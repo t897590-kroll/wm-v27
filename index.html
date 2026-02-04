@@ -40,12 +40,20 @@
             margin: 0;
             font-size: 1.5rem;
         }
+
+        .banner-logo {
+            /* This ensures the image is never taller than 80% of the banner */
+            max-height: 80%; 
+            
+            /* Maintains the image's aspect ratio */
+            width: auto; 
+        }
     </style>
 </head>
 <body>
 
     <div class="banner">
-        <center><img src="header.png"></center>
+        <center><img src="header.png" alt="Logo" class="banner-logo"></center>
     </div>
 
     <div class="content"><center>
