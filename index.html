@@ -27,15 +27,6 @@
             height: 15vh; /* 15% of the viewport height */
             background-color: #0053E2; /* Strong Blue */
             color: white;
-            /* 2. Center the image (Optional, but usually desired) */
-            display: flex;
-            justify_content: center; /* Center horizontally */
-            align-items: center;     /* Center vertically */
-            
-            /* Flexbox to center text vertically */
-            display: flex;
-            align-items: center; 
-            padding-left: 2rem;
         }
 
         /* 3. Content Styling */
@@ -45,34 +36,14 @@
             color: #001E60;
             padding: 2rem;
             font-family-default: Everyday Sans Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
-            
-            /* Ensures padding doesn't add to the total width/height */
             box-sizing: border-box; 
-        }
-
-        
-        h1 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-
-        /* The Image */
-        .restricted-img {
-            /* 3. The Core Requirement: Limit height to 85% of parent */
-            max-height: 85%;
-            
-            /* 4. Ensure width scales automatically so image doesn't stretch */
-            width: auto;
-            
-            /* 5. (Optional) Prevent it from spilling out if the image is extremely wide */
-            max-width: 100%;
         }
     </style>
 </head>
 <body>
 
     <div class="image-container">
-       <center> <img src="header.png" alt="Large Image" class="restricted-img"></center>
+       <center> <img src="header.png" style="height:150px;" height="150px" alt="Large Image" class="restricted-img"></center>
     </div>
 
     <div class="content"><center>
