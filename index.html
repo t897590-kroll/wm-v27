@@ -27,6 +27,13 @@
             height: 15vh; /* 15% of the viewport height */
             background-color: #0053E2; /* Strong Blue */
             color: white;
+            display: flex;
+        }
+
+        .flexbox {
+              align-items: center;    /* This centers it vertically */
+  justify-content: center; /* This centers it horizontally */
+  height: 100px;           /* Ensure the container has a defined height */
         }
 
         /* 3. Content Styling */
@@ -43,7 +50,7 @@
 <body>
 
     <div class="image-container">
-       <center> <img src="header.png" style="height:100px;" height="100px" alt="Large Image" class="restricted-img"></center>
+       <center> <img src="header.png" style="height:100px;" height="100px" alt="Large Image" class="flexbox"></center>
     </div>
 
     <div class="content"><center>
