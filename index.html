@@ -1,34 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome — WM V27</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your Walmart App</title>
+    <style>
+        /* 1. Basic Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensures the body fills the screen */
+            font-family: Arial, sans-serif;
+        }
+
+        /* 2. Banner Styling */
+        .banner {
+            height: 15vh; /* 15% of the viewport height */
+            background-color: #0053E2; /* Strong Blue */
+            color: white;
+            
+            /* Flexbox to center text vertically */
+            display: flex;
+            align-items: center; 
+            padding-left: 2rem;
+        }
+
+        /* 3. Content Styling */
+        .content {
+            min-height: 85vh; /* Remaining 85% of height */
+            background-color: #E9F1FE; /* Very Light Blue */
+            color: #333;
+            padding: 2rem;
+            
+            /* Ensures padding doesn't add to the total width/height */
+            box-sizing: border-box; 
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Update your Walmart Pharmacy App</h1>
-    <p class="tagline">We've made changes to our App - to add/remove your payment methods, please update the app in your appropriate App Store. If you have any questions, please reach out to your Walmart Pharmacy.</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>About this page</h2>
-      <p>This is a minimal static HTML page. Edit <code>index.html</code> and <code>style.css</code> to customize it.</p>
-    </section>
+    <div class="banner">
+        <img src="header.png">
+    </div>
 
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://github.com/t897590-kroll">My GitHub profile</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </section>
-  </main>
+    <div class="content">
+        <h2>Main Content Area</h2>
+        <p>This section is colored a lighter blue and takes up the remaining 85% of the screen height.</p>
+        <p>You can add more text, images, or forms here.</p>
+    </div>
 
-  <footer id="contact">
-    <p>Made with ❤ — <a href="mailto:you@example.com">you@example.com</a></p>
-  </footer>
 </body>
 </html>
