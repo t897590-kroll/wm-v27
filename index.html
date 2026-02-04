@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update your Walmart App</title>f
+    <title>Update your Walmart App</title>
     <style>
 
         @font-face {
-            font-family: 'EverydaySans';          /* We assign a name to reference later */
-            src: url('./es.woff2') format('woff2'); /* The path to your local file */
-        }
+    font-family: 'Everyday Sans Web';
+    src: url('ed.woff2') format('woff2'),
+         url('ed.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    }
         
         /* 1. Basic Reset */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%; /* Ensures the body fills the screen */
-            font-family: EverydaySans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-family: Everyday Sans Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
         }
 
         /* 2. Banner Styling */
@@ -37,7 +40,7 @@
             background-color: #E9F1FE; /* Very Light Blue */
             color: #001E60;
             padding: 2rem;
-            font-family-default: EverydaySans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-family-default: Everyday Sans Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
             
             /* Ensures padding doesn't add to the total width/height */
             box-sizing: border-box; 
